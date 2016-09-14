@@ -1,0 +1,6 @@
+
+*.nii
+
+papayaViewer/data/.DS_Store
+
+papayaViewer/.DS_Store
