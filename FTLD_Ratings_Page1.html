@@ -1,0 +1,408 @@
+<html>
+    <head>
+        <title>FTLD Ratings</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="FTLD_Ratings.css" type="text/css"/>
+        <script type="text/javascript" src="CookieAndParamHandling.js"></script>
+        <script type="text/javascript">
+        <!--
+          function openGoogleForm(Bildnummer, fileName, senderID) {
+            
+            //Time in seconds, the Orientation-Info-Box will be shown
+            var InfoTime = 2;
+            
+            var currentdate = new Date();
+            var currentTimestamp = currentdate.getHours() + ":"+ currentdate.getMinutes() + ":"+ currentdate.getSeconds();
+
+            var RedirectURL = "papayaViewer/PapayaFTLD.html?" + "&fileName=" + fileName + "&RaterName=" + $_GET('RaterName') + "&Bildnummer=" + Bildnummer + "&TimeStamp=" + currentTimestamp ;
+                        
+             
+            var DOMsrc = document.getElementById(senderID);
+            DOMsrc.style.color = '#CCCCCC';
+            
+            //Set new cookie only if clicked ID is greater than the stored one.
+            if (checkCookie('ProgressedUntil') != 0) {
+                if (parseInt(getCookie('ProgressedUntil')) < senderID) {  
+                setCookie('ProgressedUntil',senderID,100);
+                }
+            }
+            
+            newWindow = window.open(RedirectURL);
+          }
+        
+        
+        function changeFocus(windowID, newURL) {
+            windowID.location.href=newURL;
+            
+        }
+        
+        
+        function readProgressCookie() {
+            
+            //Check if cookie is there
+          
+            if (checkCookie('ProgressedUntil') != 0) {
+                console.log('Cookie found!');
+                var ProgressedUntilFromCookie = getCookie('ProgressedUntil');
+                console.log(ProgressedUntilFromCookie);
+                
+                //Set DOMsrc.style.color = '#CCCCCC' for all elements until the value specified in the Cookie.
+                for (i = 0; i < ProgressedUntilFromCookie; i++) {
+                    
+                var DOMsrc = document.getElementById(i+1);
+                    DOMsrc.style.color = '#CCCCCC';
+                }
+                
+            } else {
+                console.log('Cookie not found. Creating one.');
+                setCookie('ProgressedUntil',0,100);
+                
+            }  
+            
+        }
+        
+          
+        //-->
+        </script>
+    </head>
+    <body onload="readProgressCookie()">
+        <div id="pagewidth">
+            <div class="blue">
+                FTLD_Ratings
+            </div>
+            <div class="mainlist">
+                Vielen Dank, dass Sie sich an der Beurteiung der FTLD-PET Datensätze beteiligen. Bitte bewerten Sie die PET Scans aus der unten stehnenden Liste.
+                Bitte arbeiten Sie <strong>unbedingt in der angegebenen Reihenfolge</strong>!<br><br> 
+                Wenn Sie noch Fragen haben, kontaktieren Sie bitte jederzeit Jochen Hammes. (Funk #4079)
+                <!--<br><br>
+                <strong>Hinweis:</strong> Diese Seite funktioniert nur, wenn Ihr Popup-Blocker deaktiviert ist.-->
+            </div>
+            <div class="blue">
+                Datens&auml;tze
+            </div>
+        <div class="mainlist">
+            <ol id="List1">
+                <li><a id="1" href="javascript:openGoogleForm('0001','wr0001.nii','1')">FTLD_7823-31-844</a></li>	
+                <li><a id="2" href="javascript:openGoogleForm('0002','wr0002.nii','2')">FTLD_2297-94-862</a></li>	
+                <li><a id="3" href="javascript:openGoogleForm('0004','wr0004.nii','3')">FTLD_0657-75-150</a></li>	
+                <li><a id="4" href="javascript:openGoogleForm('0007','wr0007.nii','4')">FTLD_5540-82-942</a></li>	
+                <li><a id="5" href="javascript:openGoogleForm('0012','wr0012.nii','5')">FTLD_2398-66-867</a></li>	
+                <li><a id="6" href="javascript:openGoogleForm('0013','wr0013.nii','6')">FTLD_9106-39-043</a></li>	
+                <li><a id="7" href="javascript:openGoogleForm('0015','wr0015.nii','7')">FTLD_9942-85-661</a></li>	
+                <li><a id="8" href="javascript:openGoogleForm('0016','wr0016.nii','8')">FTLD_6355-61-228</a></li>	
+                <li><a id="9" href="javascript:openGoogleForm('0018','wr0018.nii','9')">FTLD_5253-21-285</a></li>	
+                <li><a id="10" href="javascript:openGoogleForm('0021','wr0021.nii','10')">FTLD_8199-14-166</a></li>	<br>
+                
+                <li><a id="11" href="javascript:openGoogleForm('0023','wr0023.nii','11')">FTLD_5453-13-591</a></li>	
+                <li><a id="12" href="javascript:openGoogleForm('0025','wr0025.nii','12')">FTLD_6819-27-347</a></li>	
+                <li><a id="13" href="javascript:openGoogleForm('0026','wr0026.nii','13')">FTLD_9547-82-840</a></li>	
+                <li><a id="14" href="javascript:openGoogleForm('0030','wr0030.nii','14')">FTLD_9793-31-602</a></li>	
+                <li><a id="15" href="javascript:openGoogleForm('0032','wr0032.nii','15')">FTLD_2016-12-493</a></li>	
+                <li><a id="16" href="javascript:openGoogleForm('0034','wr0034.nii','16')">FTLD_8861-61-024</a></li>	
+                <li><a id="17" href="javascript:openGoogleForm('0036','wr0036.nii','17')">FTLD_6591-00-037</a></li>	
+                <li><a id="18" href="javascript:openGoogleForm('0037','wr0037.nii','18')">FTLD_1210-06-551</a></li>	
+                <li><a id="19" href="javascript:openGoogleForm('0038','wr0038.nii','19')">FTLD_8421-36-253</a></li>	
+                <li><a id="20" href="javascript:openGoogleForm('0041','wr0041.nii','20')">FTLD_1568-48-835</a></li>	<br><!--
+                
+                <li><a id="21" href="javascript:openGoogleForm('0042','wr0042.nii','21')">FTLD_2499-70-533</a></li>	
+                <li><a id="22" href="javascript:openGoogleForm('0048','wr0048.nii','22')">FTLD_2507-88-404</a></li>	
+                <li><a id="23" href="javascript:openGoogleForm('0051','wr0051.nii','23')">FTLD_9548-48-493</a></li>	
+                <li><a id="24" href="javascript:openGoogleForm('0053','wr0053.nii','24')">FTLD_6929-30-491</a></li>	
+                <li><a id="25" href="javascript:openGoogleForm('0055','wr0055.nii','25')">FTLD_4562-79-889</a></li>	
+                <li><a id="26" href="javascript:openGoogleForm('0058','wr0058.nii','26')">FTLD_9281-86-674</a></li>	
+                <li><a id="27" href="javascript:openGoogleForm('0059','wr0059.nii','27')">FTLD_5769-38-634</a></li>	
+                <li><a id="28" href="javascript:openGoogleForm('0061','wr0061.nii','28')">FTLD_0967-72-283</a></li>	
+                <li><a id="29" href="javascript:openGoogleForm('0063','wr0063.nii','29')">FTLD_4024-73-712</a></li>	
+                <li><a id="30" href="javascript:openGoogleForm('0067','wr0067.nii','30')">FTLD_5657-79-652</a></li>	<br>
+                
+                <li><a id="31" href="javascript:openGoogleForm('0068','wr0068.nii','31')">FTLD_1562-00-407</a></li>	
+                <li><a id="32" href="javascript:openGoogleForm('0069','wr0069.nii','32')">FTLD_3855-83-642</a></li>	
+                <li><a id="33" href="javascript:openGoogleForm('0074','wr0074.nii','33')">FTLD_9712-54-666</a></li>	
+                <li><a id="34" href="javascript:openGoogleForm('0076','wr0076.nii','34')">FTLD_4543-12-816</a></li>	
+                <li><a id="35" href="javascript:openGoogleForm('0081','wr0081.nii','35')">FTLD_3759-61-966</a></li>	
+                <li><a id="36" href="javascript:openGoogleForm('0082','wr0082.nii','36')">FTLD_8676-38-119</a></li>	
+                <li><a id="37" href="javascript:openGoogleForm('0084','wr0084.nii','37')">FTLD_8696-53-440</a></li>	
+                <li><a id="38" href="javascript:openGoogleForm('0086','wr0086.nii','38')">FTLD_2792-64-811</a></li>	
+                <li><a id="39" href="javascript:openGoogleForm('0088','wr0088.nii','39')">FTLD_7408-39-287</a></li>	
+                <li><a id="40" href="javascript:openGoogleForm('0096','wr0096.nii','40')">FTLD_6124-54-828</a></li>	<br>
+                
+                <li><a id="41" href="javascript:openGoogleForm('0097','wr0097.nii','41')">FTLD_6005-30-510</a></li>	
+                <li><a id="42" href="javascript:openGoogleForm('0098','wr0098.nii','42')">FTLD_6104-78-753</a></li>	
+                <li><a id="43" href="javascript:openGoogleForm('0099','wr0099.nii','43')">FTLD_3817-17-224</a></li>	
+                <li><a id="44" href="javascript:openGoogleForm('0100','wr0100.nii','44')">FTLD_1630-42-783</a></li>	
+                <li><a id="45" href="javascript:openGoogleForm('0101','wr0101.nii','45')">FTLD_5308-23-309</a></li>	
+                <li><a id="46" href="javascript:openGoogleForm('0102','wr0102.nii','46')">FTLD_2185-27-171</a></li>	
+                <li><a id="47" href="javascript:openGoogleForm('0103','wr0103.nii','47')">FTLD_1057-45-885</a></li>	
+                <li><a id="48" href="javascript:openGoogleForm('0104','wr0104.nii','48')">FTLD_2135-04-650</a></li>	
+                <li><a id="49" href="javascript:openGoogleForm('0108','wr0108.nii','49')">FTLD_6433-61-539</a></li>	
+                <li><a id="50" href="javascript:openGoogleForm('0109','wr0109.nii','50')">FTLD_0997-98-994</a></li>	<br>
+                
+                <li><a id="51" href="javascript:openGoogleForm('0110','wr0110.nii','51')">FTLD_1907-72-178</a></li>	
+                <li><a id="52" href="javascript:openGoogleForm('0111','wr0111.nii','52')">FTLD_2067-42-825</a></li>	
+                <li><a id="53" href="javascript:openGoogleForm('0112','wr0112.nii','53')">FTLD_3608-30-595</a></li>	
+                <li><a id="54" href="javascript:openGoogleForm('0113','wr0113.nii','54')">FTLD_7768-67-604</a></li>	
+                <li><a id="55" href="javascript:openGoogleForm('0114','wr0114.nii','55')">FTLD_8035-09-703</a></li>	
+                <li><a id="56" href="javascript:openGoogleForm('0115','wr0115.nii','56')">FTLD_1947-05-253</a></li>	
+                <li><a id="57" href="javascript:openGoogleForm('0116','wr0116.nii','57')">FTLD_0384-71-769</a></li>	
+                <li><a id="58" href="javascript:openGoogleForm('0117','wr0117.nii','58')">FTLD_7815-18-813</a></li>	
+                <li><a id="59" href="javascript:openGoogleForm('0118','wr0118.nii','59')">FTLD_2068-82-743</a></li>	
+                <li><a id="60" href="javascript:openGoogleForm('0119','wr0119.nii','60')">FTLD_8475-54-187</a></li>	<br>
+                
+                <li><a id="61" href="javascript:openGoogleForm('0120','wr0120.nii','61')">FTLD_3363-64-438</a></li>	
+                <li><a id="62" href="javascript:openGoogleForm('0121','wr0121.nii','62')">FTLD_2248-88-617</a></li>	
+                <li><a id="63" href="javascript:openGoogleForm('0122','wr0122.nii','63')">FTLD_1143-62-839</a></li>	
+                <li><a id="64" href="javascript:openGoogleForm('0123','wr0123.nii','64')">FTLD_1983-36-229</a></li>	
+                <li><a id="65" href="javascript:openGoogleForm('0124','wr0124.nii','65')">FTLD_7026-44-869</a></li>	
+                <li><a id="66" href="javascript:openGoogleForm('0125','wr0125.nii','66')">FTLD_0124-80-140</a></li>	
+                <li><a id="67" href="javascript:openGoogleForm('0126','wr0126.nii','67')">FTLD_6477-49-689</a></li>	
+                <li><a id="68" href="javascript:openGoogleForm('0127','wr0127.nii','68')">FTLD_5661-77-489</a></li>	
+                <li><a id="69" href="javascript:openGoogleForm('0128','wr0128.nii','69')">FTLD_6257-72-341</a></li>	
+                <li><a id="70" href="javascript:openGoogleForm('0129','wr0129.nii','70')">FTLD_5714-00-055</a></li>	<br>
+                
+                <li><a id="71" href="javascript:openGoogleForm('0130','wr0130.nii','71')">FTLD_3597-30-020</a></li>	
+                <li><a id="72" href="javascript:openGoogleForm('0131','wr0131.nii','72')">FTLD_1137-22-415</a></li>	
+                <li><a id="73" href="javascript:openGoogleForm('0132','wr0132.nii','73')">FTLD_1469-62-697</a></li>	
+                <li><a id="74" href="javascript:openGoogleForm('0133','wr0133.nii','74')">FTLD_9229-74-799</a></li>	
+                <li><a id="75" href="javascript:openGoogleForm('0134','wr0134.nii','75')">FTLD_6936-82-199</a></li>	
+                <li><a id="76" href="javascript:openGoogleForm('0135','wr0135.nii','76')">FTLD_6634-81-166</a></li>	
+                <li><a id="77" href="javascript:openGoogleForm('0136','wr0136.nii','77')">FTLD_3631-66-085</a></li>	
+                <li><a id="78" href="javascript:openGoogleForm('0137','wr0137.nii','78')">FTLD_5559-77-486</a></li>	
+                <li><a id="79" href="javascript:openGoogleForm('0138','wr0138.nii','79')">FTLD_0705-75-865</a></li>	
+                <li><a id="80" href="javascript:openGoogleForm('0139','wr0139.nii','80')">FTLD_7229-44-767</a></li>	<br>
+                
+                <li><a id="81" href="javascript:openGoogleForm('0140','wr0140.nii','81')">FTLD_2964-74-040</a></li>	
+                <li><a id="82" href="javascript:openGoogleForm('0141','wr0141.nii','82')">FTLD_8340-16-077</a></li>	
+                <li><a id="83" href="javascript:openGoogleForm('0143','wr0143.nii','83')">FTLD_5164-49-446</a></li>	
+                <li><a id="84" href="javascript:openGoogleForm('0144','wr0144.nii','84')">FTLD_1497-73-071</a></li>	
+                <li><a id="85" href="javascript:openGoogleForm('0145','wr0145.nii','85')">FTLD_5575-98-722</a></li>	
+                <li><a id="86" href="javascript:openGoogleForm('0147','wr0147.nii','86')">FTLD_6052-04-846</a></li>	
+                <li><a id="87" href="javascript:openGoogleForm('0148','wr0148.nii','87')">FTLD_3738-31-047</a></li>	
+                <li><a id="88" href="javascript:openGoogleForm('0149','wr0149.nii','88')">FTLD_5260-55-813</a></li>	
+                <li><a id="89" href="javascript:openGoogleForm('0150','wr0150.nii','89')">FTLD_6890-74-909</a></li>	
+                <li><a id="90" href="javascript:openGoogleForm('0151','wr0151.nii','90')">FTLD_2730-60-032</a></li>	<br>
+                
+                <li><a id="91" href="javascript:openGoogleForm('0152','wr0152.nii','91')">FTLD_1766-01-171</a></li>	
+                <li><a id="92" href="javascript:openGoogleForm('0153','wr0153.nii','92')">FTLD_1045-92-313</a></li>	
+                <li><a id="93" href="javascript:openGoogleForm('0154','wr0154.nii','93')">FTLD_9380-93-319</a></li>	
+                <li><a id="94" href="javascript:openGoogleForm('0158','wr0158.nii','94')">FTLD_8346-32-291</a></li>	
+                <li><a id="95" href="javascript:openGoogleForm('0159','wr0159.nii','95')">FTLD_2101-77-910</a></li>	
+                <li><a id="96" href="javascript:openGoogleForm('0160','wr0160.nii','96')">FTLD_1403-30-581</a></li>	
+                <li><a id="97" href="javascript:openGoogleForm('0162','wr0162.nii','97')">FTLD_4793-81-294</a></li>	
+                <li><a id="98" href="javascript:openGoogleForm('0163','wr0163.nii','98')">FTLD_2952-07-793</a></li>	
+                <li><a id="99" href="javascript:openGoogleForm('0164','wr0164.nii','99')">FTLD_6275-39-058</a></li>	
+                <li><a id="100" href="javascript:openGoogleForm('0165','wr0165.nii','100')">FTLD_5265-52-221</a></li>	<br>
+                
+                <li><a id="101" href="javascript:openGoogleForm('0166','wr0166.nii','101')">FTLD_7853-05-208</a></li>	
+                <li><a id="102" href="javascript:openGoogleForm('0167','wr0167.nii','102')">FTLD_4284-80-690</a></li>	
+                <li><a id="103" href="javascript:openGoogleForm('0168','wr0168.nii','103')">FTLD_2464-77-541</a></li>	
+                <li><a id="104" href="javascript:openGoogleForm('0169','wr0169.nii','104')">FTLD_9180-84-447</a></li>	
+                <li><a id="105" href="javascript:openGoogleForm('0171','wr0171.nii','105')">FTLD_9233-76-072</a></li>	
+                <li><a id="106" href="javascript:openGoogleForm('0172','wr0172.nii','106')">FTLD_0669-20-013</a></li>	
+                <li><a id="107" href="javascript:openGoogleForm('0173','wr0173.nii','107')">FTLD_3146-19-720</a></li>	
+                <li><a id="108" href="javascript:openGoogleForm('0174','wr0174.nii','108')">FTLD_9427-65-987</a></li>	
+                <li><a id="109" href="javascript:openGoogleForm('0175','wr0175.nii','109')">FTLD_0505-98-653</a></li>	
+                <li><a id="110" href="javascript:openGoogleForm('0176','wr0176.nii','110')">FTLD_9791-23-906</a></li>	<br>
+                
+                <li><a id="111" href="javascript:openGoogleForm('0177','wr0177.nii','111')">FTLD_5961-19-114</a></li>	
+                <li><a id="112" href="javascript:openGoogleForm('0178','wr0178.nii','112')">FTLD_6775-89-234</a></li>	
+                <li><a id="113" href="javascript:openGoogleForm('0180','wr0180.nii','113')">FTLD_2696-10-893</a></li>	
+                <li><a id="114" href="javascript:openGoogleForm('0181','wr0181.nii','114')">FTLD_9192-74-933</a></li>	
+                <li><a id="115" href="javascript:openGoogleForm('0183','wr0183.nii','115')">FTLD_1075-70-544</a></li>	
+                <li><a id="116" href="javascript:openGoogleForm('0184','wr0184.nii','116')">FTLD_2973-85-819</a></li>	
+                <li><a id="117" href="javascript:openGoogleForm('0185','wr0185.nii','117')">FTLD_3133-19-475</a></li>	
+                <li><a id="118" href="javascript:openGoogleForm('0186','wr0186.nii','118')">FTLD_6183-80-246</a></li>	
+                <li><a id="119" href="javascript:openGoogleForm('0187','wr0187.nii','119')">FTLD_7105-72-677</a></li>	
+                <li><a id="120" href="javascript:openGoogleForm('0188','wr0188.nii','120')">FTLD_6916-18-538</a></li>	<br>
+                
+                <li><a id="121" href="javascript:openGoogleForm('0189','wr0189.nii','121')">FTLD_2327-44-578</a></li>	
+                <li><a id="122" href="javascript:openGoogleForm('0190','wr0190.nii','122')">FTLD_3278-00-815</a></li>	
+                <li><a id="123" href="javascript:openGoogleForm('0191','wr0191.nii','123')">FTLD_5544-99-962</a></li>	
+                <li><a id="124" href="javascript:openGoogleForm('0192','wr0192.nii','124')">FTLD_8887-87-455</a></li>	
+                <li><a id="125" href="javascript:openGoogleForm('0193','wr0193.nii','125')">FTLD_3770-44-525</a></li>	
+                <li><a id="126" href="javascript:openGoogleForm('0194','wr0194.nii','126')">FTLD_0226-44-076</a></li>	
+                <li><a id="127" href="javascript:openGoogleForm('0196','wr0196.nii','127')">FTLD_0554-27-111</a></li>	
+                <li><a id="128" href="javascript:openGoogleForm('0197','wr0197.nii','128')">FTLD_3281-53-901</a></li>	
+                <li><a id="129" href="javascript:openGoogleForm('0198','wr0198.nii','129')">FTLD_4751-99-317</a></li>	
+                <li><a id="130" href="javascript:openGoogleForm('0199','wr0199.nii','130')">FTLD_5259-14-773</a></li>	<br>
+                
+                <li><a id="131" href="javascript:openGoogleForm('0201','wr0201.nii','131')">FTLD_6957-83-182</a></li>	
+                <li><a id="132" href="javascript:openGoogleForm('0202','wr0202.nii','132')">FTLD_3749-30-650</a></li>	
+                <li><a id="133" href="javascript:openGoogleForm('0203','wr0203.nii','133')">FTLD_5555-89-642</a></li>	
+                <li><a id="134" href="javascript:openGoogleForm('0204','wr0204.nii','134')">FTLD_6238-89-227</a></li>	
+                <li><a id="135" href="javascript:openGoogleForm('0205','wr0205.nii','135')">FTLD_4341-93-877</a></li>	
+                <li><a id="136" href="javascript:openGoogleForm('0206','wr0206.nii','136')">FTLD_9877-82-647</a></li>	
+                <li><a id="137" href="javascript:openGoogleForm('0207','wr0207.nii','137')">FTLD_7727-15-505</a></li>	
+                <li><a id="138" href="javascript:openGoogleForm('0208','wr0208.nii','138')">FTLD_7089-98-394</a></li>	
+                <li><a id="139" href="javascript:openGoogleForm('0209','wr0209.nii','139')">FTLD_9261-04-526</a></li>	
+                <li><a id="140" href="javascript:openGoogleForm('0210','wr0210.nii','140')">FTLD_1164-27-307</a></li>	<br>
+                
+                <li><a id="141" href="javascript:openGoogleForm('0211','wr0211.nii','141')">FTLD_9495-57-009</a></li>	
+                <li><a id="142" href="javascript:openGoogleForm('0212','wr0212.nii','142')">FTLD_6085-75-106</a></li>	
+                <li><a id="143" href="javascript:openGoogleForm('0213','wr0213.nii','143')">FTLD_0731-58-373</a></li>	
+                <li><a id="144" href="javascript:openGoogleForm('0214','wr0214.nii','144')">FTLD_2323-19-102</a></li>	
+                <li><a id="145" href="javascript:openGoogleForm('0215','wr0215.nii','145')">FTLD_7895-87-000</a></li>	
+                <li><a id="146" href="javascript:openGoogleForm('0216','wr0216.nii','146')">FTLD_0361-42-179</a></li>	
+                <li><a id="147" href="javascript:openGoogleForm('0218','wr0218.nii','147')">FTLD_6429-37-899</a></li>	
+                <li><a id="148" href="javascript:openGoogleForm('0219','wr0219.nii','148')">FTLD_3768-48-420</a></li>	
+                <li><a id="149" href="javascript:openGoogleForm('0220','wr0220.nii','149')">FTLD_2642-03-508</a></li>	
+                <li><a id="150" href="javascript:openGoogleForm('0221','wr0221.nii','150')">FTLD_5364-86-888</a></li>	<br>
+                
+                <li><a id="151" href="javascript:openGoogleForm('0222','wr0222.nii','151')">FTLD_8305-59-780</a></li>	
+                <li><a id="152" href="javascript:openGoogleForm('0223','wr0223.nii','152')">FTLD_2491-79-969</a></li>	
+                <li><a id="153" href="javascript:openGoogleForm('0224','wr0224.nii','153')">FTLD_6393-57-759</a></li>	
+                <li><a id="154" href="javascript:openGoogleForm('0226','wr0226.nii','154')">FTLD_8865-89-375</a></li>	
+                <li><a id="155" href="javascript:openGoogleForm('0227','wr0227.nii','155')">FTLD_6697-46-462</a></li>	
+                <li><a id="156" href="javascript:openGoogleForm('0228','wr0228.nii','156')">FTLD_1498-00-975</a></li>	
+                <li><a id="157" href="javascript:openGoogleForm('0229','wr0229.nii','157')">FTLD_9694-10-899</a></li>	
+                <li><a id="158" href="javascript:openGoogleForm('0231','wr0231.nii','158')">FTLD_6615-41-049</a></li>	
+                <li><a id="159" href="javascript:openGoogleForm('0232','wr0232.nii','159')">FTLD_1433-80-836</a></li>	
+                <li><a id="160" href="javascript:openGoogleForm('0233','wr0233.nii','160')">FTLD_0460-45-566</a></li>	<br>
+                
+                <li><a id="161" href="javascript:openGoogleForm('0234','wr0234.nii','161')">FTLD_6567-61-031</a></li>	
+                <li><a id="162" href="javascript:openGoogleForm('0235','wr0235.nii','162')">FTLD_0779-11-009</a></li>	
+                <li><a id="163" href="javascript:openGoogleForm('0236','wr0236.nii','163')">FTLD_6921-82-690</a></li>	
+                <li><a id="164" href="javascript:openGoogleForm('0237','wr0237.nii','164')">FTLD_6323-06-055</a></li>	
+                <li><a id="165" href="javascript:openGoogleForm('0238','wr0238.nii','165')">FTLD_8525-39-405</a></li>	
+                <li><a id="166" href="javascript:openGoogleForm('0239','wr0239.nii','166')">FTLD_2865-87-561</a></li>	
+                <li><a id="167" href="javascript:openGoogleForm('0240','wr0240.nii','167')">FTLD_5750-28-657</a></li>	
+                <li><a id="168" href="javascript:openGoogleForm('0241','wr0241.nii','168')">FTLD_0203-37-842</a></li>	
+                <li><a id="169" href="javascript:openGoogleForm('0242','wr0242.nii','169')">FTLD_0566-82-640</a></li>	
+                <li><a id="170" href="javascript:openGoogleForm('0243','wr0243.nii','170')">FTLD_0029-43-005</a></li>	<br>
+                
+                <li><a id="171" href="javascript:openGoogleForm('0244','wr0244.nii','171')">FTLD_1955-70-344</a></li>	
+                <li><a id="172" href="javascript:openGoogleForm('0245','wr0245.nii','172')">FTLD_6140-09-672</a></li>	
+                <li><a id="173" href="javascript:openGoogleForm('0246','wr0246.nii','173')">FTLD_2649-45-905</a></li>	
+                <li><a id="174" href="javascript:openGoogleForm('0247','wr0247.nii','174')">FTLD_7342-39-807</a></li>	
+                <li><a id="175" href="javascript:openGoogleForm('0248','wr0248.nii','175')">FTLD_0771-87-912</a></li>	
+                <li><a id="176" href="javascript:openGoogleForm('0249','wr0249.nii','176')">FTLD_7980-46-485</a></li>	
+                <li><a id="177" href="javascript:openGoogleForm('0250','wr0250.nii','177')">FTLD_4059-29-275</a></li>	
+                <li><a id="178" href="javascript:openGoogleForm('0251','wr0251.nii','178')">FTLD_8925-16-725</a></li>	
+                <li><a id="179" href="javascript:openGoogleForm('0252','wr0252.nii','179')">FTLD_6419-49-270</a></li>	
+                <li><a id="180" href="javascript:openGoogleForm('0253','wr0253.nii','180')">FTLD_3017-57-101</a></li>	<br>
+                
+                <li><a id="181" href="javascript:openGoogleForm('0254','wr0254.nii','181')">FTLD_6129-47-824</a></li>	
+                <li><a id="182" href="javascript:openGoogleForm('0255','wr0255.nii','182')">FTLD_7657-63-655</a></li>	
+                <li><a id="183" href="javascript:openGoogleForm('0256','wr0256.nii','183')">FTLD_3291-27-795</a></li>	
+                <li><a id="184" href="javascript:openGoogleForm('0257','wr0257.nii','184')">FTLD_4864-34-611</a></li>	
+                <li><a id="185" href="javascript:openGoogleForm('0258','wr0258.nii','185')">FTLD_0835-83-410</a></li>	
+                <li><a id="186" href="javascript:openGoogleForm('0259','wr0259.nii','186')">FTLD_6610-14-366</a></li>	
+                <li><a id="187" href="javascript:openGoogleForm('0260','wr0260.nii','187')">FTLD_8749-64-574</a></li>	
+                <li><a id="188" href="javascript:openGoogleForm('0261','wr0261.nii','188')">FTLD_3490-62-513</a></li>	
+                <li><a id="189" href="javascript:openGoogleForm('0262','wr0262.nii','189')">FTLD_8940-14-182</a></li>	
+                <li><a id="190" href="javascript:openGoogleForm('0263','wr0263.nii','190')">FTLD_5300-56-776</a></li>	<br>
+                
+                <li><a id="191" href="javascript:openGoogleForm('0264','wr0264.nii','191')">FTLD_7677-43-549</a></li>	
+                <li><a id="192" href="javascript:openGoogleForm('0265','wr0265.nii','192')">FTLD_7351-54-905</a></li>	
+                <li><a id="193" href="javascript:openGoogleForm('0266','wr0266.nii','193')">FTLD_1557-25-671</a></li>	
+                <li><a id="194" href="javascript:openGoogleForm('0268','wr0268.nii','194')">FTLD_0417-80-173</a></li>	
+                <li><a id="195" href="javascript:openGoogleForm('0269','wr0269.nii','195')">FTLD_9908-81-149</a></li>	
+                <li><a id="196" href="javascript:openGoogleForm('0270','wr0270.nii','196')">FTLD_1100-04-564</a></li>	
+                <li><a id="197" href="javascript:openGoogleForm('0271','wr0271.nii','197')">FTLD_3289-64-786</a></li>	
+                <li><a id="198" href="javascript:openGoogleForm('0272','wr0272.nii','198')">FTLD_3747-49-720</a></li>	
+                <li><a id="199" href="javascript:openGoogleForm('0273','wr0273.nii','199')">FTLD_1716-14-424</a></li>	
+                <li><a id="200" href="javascript:openGoogleForm('0274','wr0274.nii','200')">FTLD_2503-07-699</a></li>	<br>
+                
+                <li><a id="201" href="javascript:openGoogleForm('0275','wr0275.nii','201')">FTLD_3403-06-333</a></li>	
+                <li><a id="202" href="javascript:openGoogleForm('0276','wr0276.nii','202')">FTLD_9694-18-861</a></li>	
+                <li><a id="203" href="javascript:openGoogleForm('0277','wr0277.nii','203')">FTLD_1640-05-069</a></li>	
+                <li><a id="204" href="javascript:openGoogleForm('0278','wr0278.nii','204')">FTLD_3870-79-842</a></li>	
+                <li><a id="205" href="javascript:openGoogleForm('0279','wr0279.nii','205')">FTLD_3909-59-156</a></li>	
+                <li><a id="206" href="javascript:openGoogleForm('0280','wr0280.nii','206')">FTLD_1014-59-602</a></li>	
+                <li><a id="207" href="javascript:openGoogleForm('0282','wr0282.nii','207')">FTLD_9123-58-753</a></li>	
+                <li><a id="208" href="javascript:openGoogleForm('0283','wr0283.nii','208')">FTLD_6559-72-371</a></li>	
+                <li><a id="209" href="javascript:openGoogleForm('0284','wr0284.nii','209')">FTLD_9879-46-839</a></li>	
+                <li><a id="210" href="javascript:openGoogleForm('0286','wr0286.nii','210')">FTLD_4160-12-655</a></li>	<br>
+                
+                <li><a id="211" href="javascript:openGoogleForm('0287','wr0287.nii','211')">FTLD_1647-92-849</a></li>	
+                <li><a id="212" href="javascript:openGoogleForm('0288','wr0288.nii','212')">FTLD_1925-44-807</a></li>	
+                <li><a id="213" href="javascript:openGoogleForm('0289','wr0289.nii','213')">FTLD_7820-56-070</a></li>	
+                <li><a id="214" href="javascript:openGoogleForm('0290','wr0290.nii','214')">FTLD_4972-27-985</a></li>	
+                <li><a id="215" href="javascript:openGoogleForm('0291','wr0291.nii','215')">FTLD_2365-67-734</a></li>	
+                <li><a id="216" href="javascript:openGoogleForm('0292','wr0292.nii','216')">FTLD_8477-42-829</a></li>	
+                <li><a id="217" href="javascript:openGoogleForm('0294','wr0294.nii','217')">FTLD_2544-52-845</a></li>	
+                <li><a id="218" href="javascript:openGoogleForm('0295','wr0295.nii','218')">FTLD_1382-87-856</a></li>	
+                <li><a id="219" href="javascript:openGoogleForm('0296','wr0296.nii','219')">FTLD_5589-30-050</a></li>	
+                <li><a id="220" href="javascript:openGoogleForm('0297','wr0297.nii','220')">FTLD_2927-77-908</a></li>	<br>
+                
+                <li><a id="221" href="javascript:openGoogleForm('0298','wr0298.nii','221')">FTLD_1581-25-387</a></li>	
+                <li><a id="222" href="javascript:openGoogleForm('0299','wr0299.nii','222')">FTLD_2241-74-143</a></li>	
+                <li><a id="223" href="javascript:openGoogleForm('0300','wr0300.nii','223')">FTLD_1915-99-132</a></li>	
+                <li><a id="224" href="javascript:openGoogleForm('0301','wr0301.nii','224')">FTLD_2327-98-955</a></li>	
+                <li><a id="225" href="javascript:openGoogleForm('0302','wr0302.nii','225')">FTLD_8908-19-864</a></li>	
+                <li><a id="226" href="javascript:openGoogleForm('0303','wr0303.nii','226')">FTLD_0427-62-372</a></li>	
+                <li><a id="227" href="javascript:openGoogleForm('0304','wr0304.nii','227')">FTLD_8256-60-325</a></li>	
+                <li><a id="228" href="javascript:openGoogleForm('0305','wr0305.nii','228')">FTLD_5551-92-871</a></li>	
+                <li><a id="229" href="javascript:openGoogleForm('0306','wr0306.nii','229')">FTLD_6528-92-925</a></li>	
+                <li><a id="230" href="javascript:openGoogleForm('0307','wr0307.nii','230')">FTLD_3993-94-820</a></li>	<br>
+                
+                <li><a id="231" href="javascript:openGoogleForm('0308','wr0308.nii','231')">FTLD_0585-12-051</a></li>	
+                <li><a id="232" href="javascript:openGoogleForm('0309','wr0309.nii','232')">FTLD_5010-44-675</a></li>	
+                <li><a id="233" href="javascript:openGoogleForm('0310','wr0310.nii','233')">FTLD_3265-12-952</a></li>	
+                <li><a id="234" href="javascript:openGoogleForm('0311','wr0311.nii','234')">FTLD_1259-05-701</a></li>	
+                <li><a id="235" href="javascript:openGoogleForm('0312','wr0312.nii','235')">FTLD_8836-46-187</a></li>	
+                <li><a id="236" href="javascript:openGoogleForm('0313','wr0313.nii','236')">FTLD_3672-34-647</a></li>	
+                <li><a id="237" href="javascript:openGoogleForm('0315','wr0315.nii','237')">FTLD_5019-00-009</a></li>	
+                <li><a id="238" href="javascript:openGoogleForm('0317','wr0317.nii','238')">FTLD_4471-41-824</a></li>	
+                <li><a id="239" href="javascript:openGoogleForm('0318','wr0318.nii','239')">FTLD_4054-23-964</a></li>	
+                <li><a id="240" href="javascript:openGoogleForm('0319','wr0319.nii','240')">FTLD_8218-44-367</a></li>	<br>
+                
+                <li><a id="241" href="javascript:openGoogleForm('0320','wr0320.nii','241')">FTLD_9718-01-412</a></li>	
+                <li><a id="242" href="javascript:openGoogleForm('0321','wr0321.nii','242')">FTLD_1963-41-935</a></li>	
+                <li><a id="243" href="javascript:openGoogleForm('0322','wr0322.nii','243')">FTLD_7626-42-757</a></li>	
+                <li><a id="244" href="javascript:openGoogleForm('0323','wr0323.nii','244')">FTLD_6469-88-952</a></li>	
+                <li><a id="245" href="javascript:openGoogleForm('0324','wr0324.nii','245')">FTLD_3171-58-895</a></li>	
+                <li><a id="246" href="javascript:openGoogleForm('0325','wr0325.nii','246')">FTLD_0553-08-766</a></li>	
+                <li><a id="247" href="javascript:openGoogleForm('0326','wr0326.nii','247')">FTLD_1245-71-546</a></li>	
+                <li><a id="248" href="javascript:openGoogleForm('0327','wr0327.nii','248')">FTLD_6108-88-566</a></li>	
+                <li><a id="249" href="javascript:openGoogleForm('0328','wr0328.nii','249')">FTLD_9149-30-032</a></li>	
+                <li><a id="250" href="javascript:openGoogleForm('0329','wr0329.nii','250')">FTLD_8361-27-948</a></li>	<br>
+                
+                <li><a id="251" href="javascript:openGoogleForm('0330','wr0330.nii','251')">FTLD_4092-65-881</a></li>	
+                <li><a id="252" href="javascript:openGoogleForm('0331','wr0331.nii','252')">FTLD_2149-36-925</a></li>	
+                <li><a id="253" href="javascript:openGoogleForm('0332','wr0332.nii','253')">FTLD_8132-85-096</a></li>	
+                <li><a id="254" href="javascript:openGoogleForm('0333','wr0333.nii','254')">FTLD_3182-58-100</a></li>	
+                <li><a id="255" href="javascript:openGoogleForm('0334','wr0334.nii','255')">FTLD_0663-56-217</a></li>	
+                <li><a id="256" href="javascript:openGoogleForm('0335','wr0335.nii','256')">FTLD_2617-20-367</a></li>	
+                <li><a id="257" href="javascript:openGoogleForm('0336','wr0336.nii','257')">FTLD_4399-07-987</a></li>	
+                <li><a id="258" href="javascript:openGoogleForm('0337','wr0337.nii','258')">FTLD_3081-37-164</a></li>	
+                <li><a id="259" href="javascript:openGoogleForm('0338','wr0338.nii','259')">FTLD_8651-35-520</a></li>	
+                <li><a id="260" href="javascript:openGoogleForm('0339','wr0339.nii','260')">FTLD_5463-86-095</a></li>	<br>
+                
+                <li><a id="261" href="javascript:openGoogleForm('0340','wr0340.nii','261')">FTLD_0358-88-053</a></li>	
+                <li><a id="262" href="javascript:openGoogleForm('0341','wr0341.nii','262')">FTLD_3980-19-693</a></li>	
+                <li><a id="263" href="javascript:openGoogleForm('0342','wr0342.nii','263')">FTLD_1336-55-892</a></li>	
+                <li><a id="264" href="javascript:openGoogleForm('0345','wr0345.nii','264')">FTLD_4864-53-655</a></li>	
+                <li><a id="265" href="javascript:openGoogleForm('0346','wr0346.nii','265')">FTLD_0406-96-671</a></li>	
+                <li><a id="266" href="javascript:openGoogleForm('0347','wr0347.nii','266')">FTLD_3665-80-771</a></li>	
+                <li><a id="267" href="javascript:openGoogleForm('0348','wr0348.nii','267')">FTLD_3056-76-011</a></li>	
+                <li><a id="268" href="javascript:openGoogleForm('0349','wr0349.nii','268')">FTLD_1741-08-802</a></li>	
+                <li><a id="269" href="javascript:openGoogleForm('0350','wr0350.nii','269')">FTLD_3930-01-461</a></li>	
+                <li><a id="270" href="javascript:openGoogleForm('0351','wr0351.nii','270')">FTLD_2858-92-289</a></li>	<br>
+                
+                <li><a id="271" href="javascript:openGoogleForm('0352','wr0352.nii','271')">FTLD_9496-84-054</a></li>	
+                <li><a id="272" href="javascript:openGoogleForm('0353','wr0353.nii','272')">FTLD_1602-14-554</a></li>	
+                <li><a id="273" href="javascript:openGoogleForm('0354','wr0354.nii','273')">FTLD_8575-77-579</a></li>	
+                <li><a id="274" href="javascript:openGoogleForm('0355','wr0355.nii','274')">FTLD_1776-97-278</a></li>	
+                <li><a id="275" href="javascript:openGoogleForm('0358','wr0358.nii','275')">FTLD_6778-54-340</a></li>	
+                <li><a id="276" href="javascript:openGoogleForm('0359','wr0359.nii','276')">FTLD_2607-19-312</a></li>	
+                <li><a id="277" href="javascript:openGoogleForm('0360','wr0360.nii','277')">FTLD_0403-34-262</a></li>	
+                <li><a id="278" href="javascript:openGoogleForm('0361','wr0361.nii','278')">FTLD_4964-79-083</a></li>	
+                <li><a id="279" href="javascript:openGoogleForm('0362','wr0362.nii','279')">FTLD_4626-77-418</a></li>	
+                <li><a id="280" href="javascript:openGoogleForm('0363','wr0363.nii','280')">FTLD_8138-37-156</a></li>	<br>
+                <li><a id="281" href="javascript:openGoogleForm('0364','wr0364.nii','281')">FTLD_7114-81-913</a></li>	
+                -->
+            </ol>
+        </div>
+        <div class="blue">
+            Dr. Jochen Hammes, 2016
+        </div>
+        <div id="footer">
+            
+        </div>
+        <!--<div id="OrientationInfo">
+            <strong>Achtung:</strong><br><span id="OrientationInfoText">L im Bild bedeutet ananatomisch L</span>
+        </div>-->
+    </body>
+</html>
