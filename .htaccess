@@ -1,0 +1,7 @@
+AuthUserFile /home/hammesj/public_html/.htpasswd
+AuthName "Please log in"
+AuthType Basic
+
+require valid-user
+#order allow,deny
+#deny from all
